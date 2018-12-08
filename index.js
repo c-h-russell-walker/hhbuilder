@@ -13,7 +13,7 @@
 
  /*
  Note about use:
-    If you use the quer param debug=true - like so:
+    If you use the query param debug=true - like so:
     file:///Users/crussellwalker/Desktop/hhbuilder/index.html?debug=true
     This allows you to test the JS validation since we use that to conditional _not_
     add the html5 validation attributes.
@@ -54,7 +54,7 @@
         // .options is an HTMLOptionsCollection not an array hence the spread operator
         relOptions = [...relSelect.options].map(opt => opt.value).filter(optVal => !!optVal);
 
-        // Set hmtl required attributes as "first line of defense"
+        // Set html required attributes as "first line of defense"
         // We use the debug param if we want to test the actual form validation
         if (!debug) {
             ageInput.required = true;
