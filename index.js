@@ -152,8 +152,6 @@
     }
 
     function clearForm() {
-        // TODO - After clearing form the required html5 attribute is causing the
-        // select/dropdown to show that the field is required - maybe use an autofocus on something else?
         hhForm.reset();
         clearErrorList();
     }
