@@ -42,6 +42,8 @@
 
         const addButton = document.querySelector('.builder form .add');
 
+        const submitButton = document.querySelector('.builder form button[type=submit]');
+
         const ageInput = document.querySelector('.builder form input[name=age');
 
         const relSelect = document.querySelector('.builder form select[name=rel');
@@ -72,7 +74,10 @@
 
         // Attach Event handlers
         addButton.onclick = onAddClick;
-        hhForm.onsubmit = onSubmitForm;
+
+        // Make the button _not_ a submit type so we can use the html required attribute
+        submitButton.type = null;
+        submitButton.onclick = onSubmitForm;
     };
 
     class Member {
